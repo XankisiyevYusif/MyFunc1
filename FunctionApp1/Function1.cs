@@ -36,7 +36,7 @@ namespace FunctionApp1
             var message = await _queueService.ReceiveMessageAsync();
 
             _logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
-            _logger.LogInformation($"Message from queue: {message}");
+            _logger.LogInformation($"MEssage from queue: {message}");
 
             if (myTimer.ScheduleStatus is not null)
             {
